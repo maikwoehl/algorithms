@@ -1,0 +1,5 @@
+[package]
+
+name = "rust_bubble_sort"
+version = "0.0.1"
+authors = [ "Maik Wöhl <maik.woehl@outlook.de>" ]

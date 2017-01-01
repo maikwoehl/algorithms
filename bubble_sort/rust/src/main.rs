@@ -62,3 +62,28 @@ fn sort_descending(array_elements: &mut [i32]) {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::sort_ascending;
+    use super::sort_descending;
+    #[test]
+    fn test_ascending() {
+        let mut elements: [i32; 4] = [9, 5, 3, 7];
+        {
+            sort_ascending(&mut elements);
+        }
+
+        assert_eq!([3, 5, 7, 9], elements);
+    }
+
+    #[test]
+    fn test_descending() {
+        let mut elements: [i32; 4] = [3, 8, 4, 1];
+        {
+            sort_descending(&mut elements)
+        }
+
+        assert_eq!([8, 4, 3, 1], elements);
+    }
+}
