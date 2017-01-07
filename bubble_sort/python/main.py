@@ -21,9 +21,8 @@ def sort_ascending(elements_array):
             swapped = False
             if idx < len(return_array)-1:
                 if return_array[idx] > return_array[idx+1]:
-                    temp_item = return_array[idx]
                     return_array[idx] = return_array[idx+1]
-                    return_array[idx+1] = temp_item
+                    return_array[idx+1] = item
                     swapped = True
                     break
 
@@ -38,9 +37,8 @@ def sort_descending(elements_array):
             swapped = False
             if idx < len(return_array)-1:
                 if return_array[idx] < return_array[idx+1]:
-                    temp_item = return_array[idx]
                     return_array[idx] = return_array[idx+1]
-                    return_array[idx+1] = temp_item
+                    return_array[idx+1] = item
                     swapped = True
                     break
 
