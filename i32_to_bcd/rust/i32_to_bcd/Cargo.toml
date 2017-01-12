@@ -1,0 +1,6 @@
+[package]
+name = "i32_to_bcd"
+version = "0.1.0"
+authors = ["Maik Wöhl <maik.woehl@googlemail.com>"]
+
+[dependencies]

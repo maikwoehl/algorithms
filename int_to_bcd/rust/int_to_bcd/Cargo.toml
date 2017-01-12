@@ -1,6 +1,0 @@
-[package]
-name = "int_to_bcd"
-version = "0.1.0"
-authors = ["Maik Wöhl <maik@maik-antergos.fritz.box>"]
-
-[dependencies]
