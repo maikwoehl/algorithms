@@ -14,7 +14,9 @@ fn i32_to_bcd(x: i32) -> i32 {
     let mut number: i32 = x;
     while digits >= 0 {
         let div_result: i32 = (number / power_of_ten) as i32;
+        // Add n-th digit to bcd_number and shift it to n-th bcd nibble
         bcd_number = bcd_number + (div_result << digits*4);
+        // Decrease number by the calculated power_of_ten (e.g. 312 - 300 = 12)
         number = number - div_result * power_of_ten;
         power_of_ten = power_of_ten / 10;
         digits = digits - 1;
